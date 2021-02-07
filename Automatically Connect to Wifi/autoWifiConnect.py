@@ -5,7 +5,7 @@ import os
 import sys
 import time
 
-#os.popen()   opens a pipe between prpgram and command prompt to run the command and returns and open file object connected to the pipe
+#os.popen()   opens a pipe between program and command prompt to run the command and returns and open file object connected to the pipe
 
 show_saved_network_cmd = os.popen("netsh wlan show profiles").read()        #reads the command that need to be put there in command prompt using os and popen
 

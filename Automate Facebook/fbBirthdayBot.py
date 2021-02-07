@@ -1,7 +1,4 @@
 # Login to FB, see that how many has their birthdays, Go to Events, go to birthdays, find textbox for the birthday person, enters the message, send the message.
-
-
-
 from selenium import webdriver
 
 # open googleChrome, open facebook, click  on mail, enter mail, click on pass, enter pass, click sign in
@@ -9,9 +6,8 @@ from selenium import webdriver
 user_id = input("Enter Email or Phone Number: ")
 user_Password = input("Enter the Password: ")
 
-
-
-browserChrome = webdriver.Chrome("C:\\Users\Lenovo\\Desktop\\AMEYA\\PYTHON\\AUTOMATION\\chromedriver_win32\\chromedriver.exe")  #opens Chrome/Browser
+ChromeDriverExeFilePath = "" #Path to chromeDriver exe file
+browserChrome = webdriver.Chrome(ChromeDriverExeFilePath)  #opens Chrome/Browser
 
 browserChrome.get("https://www.facebook.com")  #gets the link to open in browser
 
